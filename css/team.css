@@ -1,0 +1,141 @@
+/* ==========================
+   TEAM PAGE ANIMATIONS
+========================== */
+
+
+/* 
+   ALL TEAM CARDS START HIDDEN
+*/
+
+.team-reveal,
+.leadership-card,
+.member-card,
+.founder-card,
+.advisor-card{
+
+
+    opacity:0;
+
+
+    transform:
+        translateY(80px);
+
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+
+}
+
+
+
+
+
+/*
+   WHEN JAVASCRIPT ADDS .show
+*/
+
+.team-reveal.show,
+.leadership-card.show,
+.member-card.show,
+.founder-card.show,
+.advisor-card.show{
+
+
+    opacity:1;
+
+
+    transform:
+        translateY(0);
+
+
+}
+
+
+
+
+
+
+/* ==========================
+   IMAGE ANIMATION
+========================== */
+
+
+.member-card img,
+.member-image img,
+.advisor-card img,
+.founder-card img{
+
+
+    opacity:0;
+
+
+    transform:
+        scale(.85);
+
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+
+}
+
+
+
+.image-show{
+
+
+    opacity:1 !important;
+
+
+    transform:
+        scale(1) !important;
+
+
+}
+
+
+
+
+
+
+/* ==========================
+   STAGGER EFFECT
+========================== */
+
+
+.member-card:nth-child(1){
+
+    transition-delay:.1s;
+
+}
+
+
+.member-card:nth-child(2){
+
+    transition-delay:.25s;
+
+}
+
+
+.member-card:nth-child(3){
+
+    transition-delay:.4s;
+
+}
+
+
+.member-card:nth-child(4){
+
+    transition-delay:.55s;
+
+}
+
+
+.member-card:nth-child(5){
+
+    transition-delay:.7s;
+
+}
